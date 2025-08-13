@@ -1,0 +1,14 @@
+aucmedi*
+__py*
+data
+*.txt
+models
+model/reinhard_all/out
+staintools_img
+ami_br*
+torchstain*
+.vscode
+evaluate.py
+MIDOG25_alt.csv
+OMG-Octo_orig.csv
+pred.py
