@@ -1,7 +1,7 @@
 aucmedi*
 __py*
 data
-*.txt
+data_exploration/*/*.txt
 models
 model/reinhard_all/out
 staintools_img

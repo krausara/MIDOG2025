@@ -1,0 +1,1 @@
+Balanced Accuracy for None reinhard: 0.8965
