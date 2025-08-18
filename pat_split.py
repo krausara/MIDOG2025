@@ -2,9 +2,9 @@ import pandas as pd
 import os
 from sklearn.model_selection import train_test_split
 
-path_split = 'pat_split_omg-oct'
+path_split = 'pat_split_all'
 if not os.path.exists(path_split) : os.mkdir(path_split)
-path_csv = 'OMG-Octo.csv'
+path_csv = 'merged_data.csv'
 
 # read csv 
 midog_df = pd.read_csv(path_csv)
