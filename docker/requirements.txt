@@ -1,0 +1,5 @@
+aucmedi
+torchstain
+opencv-python-headless
+Pillow
+numpy
