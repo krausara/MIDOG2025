@@ -155,7 +155,6 @@ run_docker_forward_pass() {
     -v "${DOCKER_NOOP_VOLUME}":/tmp \
     -v "${SCRIPT_DIR}/model":/opt/ml/model:ro \
     "$DOCKER_IMAGE_TAG"
-  sudo chown -R "$(id -u):$(id -g)" "${OUTPUT_DIR}"
 
   echo "=+= Wrote results to ${OUTPUT_DIR}/${interface_dir}"
 }

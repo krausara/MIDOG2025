@@ -4,18 +4,17 @@ FROM --platform=linux/amd64 tensorflow/tensorflow:latest-gpu AS example-algorith
 # Ensures that Python output to stdout/stderr is not buffered: prevents missing information when terminating
 ENV PYTHONUNBUFFERED=1
 
-#RUN groupadd -r user && useradd -m --no-log-init -r -g user user
-#USER user
+RUN apt-get update && apt-get install -y libgl1
+
+RUN groupadd -r user && useradd -m --no-log-init -r -g user user
+USER user
 
 WORKDIR /opt/app
 
-COPY requirements.txt /opt/app/
-COPY resources /opt/app/resources
-COPY resources/target.png /opt/app/resources/
-
-COPY model /opt/app/model
-
-RUN apt-get update && apt-get install -y libgl1
+COPY --chown=user:user requirements.txt /opt/app/
+COPY --chown=user:user resources /opt/app/resources
+COPY --chown=user:user resources/target.png /opt/app/resources/
+COPY --chown=user:user model /opt/app/model
 
 # You can add any Python dependencies to requirements.txt
 RUN python -m pip install \
@@ -24,6 +23,6 @@ RUN python -m pip install \
     --no-color \
     --requirement /opt/app/requirements.txt
 
-COPY inference.py /opt/app/
+COPY --chown=user:user inference.py /opt/app/
 
 ENTRYPOINT ["python", "inference.py"]
