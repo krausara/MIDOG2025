@@ -1,0 +1,14 @@
+TRAINING OVERVIEW:
+
+==================
+
+Number of patients in train:  53 (79.10 percent)
+Number of patients in test:  14 (20.90 percent)
+
+Number of NMF in dataset:  1571 (78.59 percent)
+Number of NMF in train:  1357 (78.30 percent)
+Number of NMF in test:  214 (80.45 percent)
+
+Number of AMF in dataset:  428 (21.41 percent)
+Number of AMF in train:  376 (21.70 percent)
+Number of AMF in test:  52 (19.55 percent)

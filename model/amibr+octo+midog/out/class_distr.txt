@@ -1,0 +1,6 @@
+class	class_freq	class_perc
+AMF	2865	23.0
+NMF	9566	77.0
+class	class_freq	class_perc
+AMF	686	21.0
+NMF	2572	79.0
