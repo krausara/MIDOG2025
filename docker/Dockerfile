@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 tensorflow/tensorflow:latest-gpu AS example-algorithm-amd64
+FROM --platform=linux/amd64 tensorflow/tensorflow:2.18.0-gpu AS example-algorithm-amd64
 # Use a 'large' base container to show-case how to load pytorch and use the GPU (when enabled)
 
 # Ensures that Python output to stdout/stderr is not buffered: prevents missing information when terminating
