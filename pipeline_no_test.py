@@ -18,7 +18,7 @@ os.environ['CUDA_VISIBLE_DEVICES']='1'
 # stain normalization parameters
 # allowed stainers: 'reinhard', 'macenko'
 # allowed stain methods: 'modified' for modified Reinhard else None
-stainer = 'midog+octo-test'
+stainer = 'midog+octo+amibr-test'
 stain_method = None
 # path to target image for stain normalization
 target_path = './data/2935.png' 
@@ -36,7 +36,7 @@ callbacks = []
 # Paths
 # path to input images
 path_input = 'data'
-path_df_train = 'midog+octo.csv'
+path_df_train = 'merged_data.csv'
 
 # path to results directories
 path_output = os.path.join(stainer, 'out')

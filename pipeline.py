@@ -38,7 +38,7 @@ callbacks = []
 # path to input images
 path_input = 'data'
 # path to patient split
-path_split = 'pat_split_midog+octo'
+path_split = 'pat_split'
 path_df_train = os.path.join(path_split, 'dataset.train.csv')
 path_df_test = os.path.join(path_split, 'dataset.test.csv')
 

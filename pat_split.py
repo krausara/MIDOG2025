@@ -3,11 +3,11 @@ import os
 from sklearn.model_selection import train_test_split
 
 # create output directory
-path_split = 'pat_split_midog'
+path_split = 'pat_split'
 if not os.path.exists(path_split) : os.mkdir(path_split)
 
 # read csv 
-merged = pd.read_csv('MIDOG25.csv')
+merged = pd.read_csv('merged_data.csv')
 # split the dataset into training and test sets based on unique patient filenames
 files_train, files_test = train_test_split(merged.filename.unique(), train_size=0.8)
 
